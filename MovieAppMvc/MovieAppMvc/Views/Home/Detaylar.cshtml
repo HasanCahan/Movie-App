@@ -1,0 +1,36 @@
+﻿@model Film
+<div class="row mb-5">
+    <div class="col-md-12">
+
+        <div class="card mb-3">
+            <div class="card-body">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                        <img src="/img/@Model.ImageUrl" alt="@Model.Açıklama" class="card-img" />
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h3 class="card-title">
+                                <b>@Model.FilmAdı</b>
+                            </h3>
+                            <p class="card-text">@Model.Açıklama</p>
+                            <br />
+                            <p class="card-text"><b style="font-size: 20px;">Yönetmen: </b>@Model.Yönetmen</p>
+                            <br />
+                            <p class="card-text"><b style="font-size: 20px;">Oyuncular: </b>@Model.Oyuncular</p>
+                            <br />
+                            <p class="card-text"><small class="text-muted">4 days ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <br />
+        <a href="/Home/Index" class="btn btn-outline-warning">Diğer Filmler</a>
+        <br />
+        <br />
+        <br />
+    </div>
+</div>
